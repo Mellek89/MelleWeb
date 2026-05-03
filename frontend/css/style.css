@@ -1,0 +1,289 @@
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300; /* Light = 300 */
+  font-display: swap; /* sorgt dafür, dass Text sofort sichtbar ist */
+  src: url('./Outfit/static/Outfit-Light.woff') format('woff');
+}
+html, body {
+  overflow: auto;
+  min-height: 100%;
+}
+body {
+font-family: "Montserrat",Sans-serif;
+  font-weight: 300; /* Light */
+  background-color: #E6F0FF;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+/* Header */
+.header {
+ display: flex;
+ flex-direction: row;
+  padding: 0.5em 0;
+  align-items: center;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #E2E2E2;
+ 
+}
+
+
+.main {
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #E2E2E2;
+  display: grid;
+  grid-template-columns: 1fr;   /* nur EINE Spalte auf Mobil */
+  grid-template-rows: auto auto auto auto auto; 
+  gap: 5rem;
+  /*min-height: auto;*/
+  min-height: 100dvh;
+  align-content:start;
+padding: 0;
+  color: #141414;
+  gap: 5rem;
+  justify-items: center; /* horizontal zentrieren */
+ 
+}
+
+
+
+*{margin: 0;
+  padding:0;
+  box-sizing: border-box;
+ /* font-family: 'Poppins', 'san-serifs'*/}
+
+
+ h2{
+   /*color:  #cbcaca;*/
+    color: #2A2A2A;
+   font-size: 30px;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 9.4px;
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: row;
+    margin-inline: unset;
+}
+ .side-menu {
+ display: block;
+ opacity: 0;
+ } 
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background: #F5F5F5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 4;
+
+}
+    .nav li a{
+      text-decoration:none;
+      color: #4A6FA5;
+      
+    }
+    .nav.de li a{ 
+    color: #0000008f;
+    }
+  
+     .menu {
+           
+            display: grid;
+            gap: 3rem; /* Use rem for better scalability */
+            text-align: center;
+             padding: 0;
+            margin: 0;
+            list-style: none;
+          
+          }
+
+    
+    
+  /* Menu Icon */
+      .hamb{ 
+        position: relative;
+        justify-self: start;
+        cursor: default;
+        padding: 40px 20px; 
+        z-index: 5; /* Set z-index to keep the icon at the top position */  
+        margin-left: auto;
+        order:2;
+        
+      }
+      /* Style label tag */
+
+      .hamb-line {
+     
+        background: #4A6FA5;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px; 
+      
+
+      }
+      /* Style span tag */
+
+      .hamb-line::before,
+      .hamb-line::after{
+          background: #4A6FA5;
+          content: '';
+          display: block;
+          height: 100%;
+          position: absolute;
+          /*transition: all .2s ease-out;*/
+          width: 100%;
+      }
+      .hamb-line::before{
+          top: 5px;
+      }
+      .hamb-line::after{
+          top: -5px;
+      }
+
+      /* Toggle menu icon */
+      .side-menu:checked ~ .menuContainer .nav {
+     transform: translateX(0);
+      }
+
+      .side-menu:checked ~ .hamb .hamb-line {
+        background: transparent;
+      }
+      .side-menu:checked ~ .hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top:0;
+      }
+      .side-menu:checked ~ .hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top:0;
+      }
+
+      body:has(.side-menu:checked) {
+      overflow: hidden;
+      }
+      /* Hide logoMobil when side-menu is checked */
+        .side-menu:checked ~ .logoDiv {
+          display: none;
+        }
+
+
+.lang-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 12px;
+  padding-right: 1em;
+  order:3;
+  z-index: 4;
+}
+
+.lang {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.lang:hover {
+  opacity: 1;
+}
+
+.lang.active {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.divider {
+  opacity: 0.4;
+}
+
+.logo{
+    width: 100px;
+    transform: translateY(2px);
+    order:1;
+   z-index: 4;
+
+}
+
+.footer{
+   background-color: #F5F5F5;
+}
+
+
+
+@media (min-width: 1024px) {
+  .container {
+   
+    margin: 0 auto;
+  }
+
+  .header {
+  display: grid;
+  text-align: left;
+  padding: 15px 25px 15px 25px;
+
+  }
+
+   .hamb, .side-menu {
+ display: none;
+ } 
+    
+ .nav {
+    display: flex;
+    position: static;
+    height: auto;
+    background: transparent;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    transform: none;
+   
+    }
+
+.menu{
+      display: flex;
+  flex-direction: row;
+}
+  .main {
+  background-color: #F5F5F5;
+  display: grid;
+  padding-top: 3rem;  
+  gap: 5rem !important;
+}
+.menuContainer{
+    gap: 0.5em;
+    margin-inline: auto;
+}
+
+ .logo,
+  .hamb,
+  .lang-picker {
+    order: 0; 
+    margin-left: 0;
+  }
+
+    .mobile-only {
+    display: none;
+  }
+}
