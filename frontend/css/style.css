@@ -190,7 +190,7 @@ padding: 0;
 
 
 .lang-picker {
-    position:relative;
+  position:fixed;
   display: flex;
   align-items: center;
   gap: 0.4em;
@@ -220,10 +220,11 @@ padding: 0;
 }
 
 .logo{
+    position: fixed;
     width: 100px;
     transform: translateY(2px);
     order:1;
-   z-index: 4;
+    z-index: 4;
 
 }
 
