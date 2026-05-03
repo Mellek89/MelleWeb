@@ -190,6 +190,7 @@ padding: 0;
 
 
 .lang-picker {
+    position:relative;
   display: flex;
   align-items: center;
   gap: 0.4em;
