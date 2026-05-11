@@ -253,6 +253,12 @@ align-items: center;
    font-size: 12px;  
     text-align: center;
 }
+.angelLogo{
+  background-color: #f5f5f5;
+}
+.angel{
+  width: 100px;
+}
 
 .footer{
    background-color: #F5F5F5;
