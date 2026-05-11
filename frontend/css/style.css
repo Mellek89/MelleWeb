@@ -227,8 +227,34 @@ padding: 0;
    z-index: 4;
 
 }
+.mockopBundle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mockups{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 .mockups img{
 width: 300px;
+align-items: center;
+}
+.mockups .subline{
+  text-transform: uppercase;
+  letter-spacing: 9.4px;
+  text-align: center;
+}
+.mockups .industry{
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 9.4px;
+   text-align: center;
+}
+.mockups .description{
+   font-size: 12px;  
+    text-align: center;
 }
 
 .footer{
