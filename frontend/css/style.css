@@ -17,6 +17,101 @@ font-family: "Montserrat",Sans-serif;
   min-height: 100vh;
 }
 
+ /* INTRO */
+
+    #intro{
+      position:fixed;
+      inset:0;
+      background:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:9999;
+    }
+
+    .intro-wrap{
+      display:flex;
+      align-items:center;
+      gap:28px;
+      position:relative;
+    }
+    .svgLogoIntro{
+  width:300px;
+  height:auto;
+  display:block;
+  overflow:visible;
+}
+
+    .brace{
+      font-size:130px;
+      font-weight:300;
+      color:#5c84d6;
+      line-height:1;
+      opacity:0;
+      filter:blur(10px);
+    }
+
+    .logo_intro{
+      display: flex;
+      position:relative;
+      text-align:center;
+      transform:translateY(20px);
+      
+    }
+
+    .logo-top{
+      font-size:42px;
+      font-weight:300;
+      color:#5c84d6;
+      letter-spacing:1px;
+    }
+
+    .logo-bottom{
+      font-size:42px;
+      font-weight:300;
+      color:#555;
+      letter-spacing:1px;
+    }
+
+    /* glow */
+
+    .glow{
+      position:absolute;
+      width:220px;
+      height:220px;
+      border-radius:50%;
+      background:rgba(92,132,214,0.18);
+      filter:blur(50px);
+      z-index:-1;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%) scale(0.5);
+      opacity:0;
+    }
+
+    /* Content */
+
+ #content{
+  opacity:0;
+  transform:translateY(30px);
+}
+
+    .hero{
+      text-align:center;
+    }
+
+    .hero h1{
+      font-size:64px;
+      font-weight:300;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+      color:#666;
+    }
+
+
 /* Container */
 .container {
   display: flex;
@@ -219,12 +314,12 @@ padding: 0;
   opacity: 0.4;
 }
 
-.logo{
+.svgLogo{
     position: relative;
     width: 50px;
     transform: translateY(2px);
-    order:1;
-   z-index: 4;
+   /* order:1;*/
+    z-index: 4;
 
 }
 
@@ -282,7 +377,8 @@ align-items: center;
    .hamb, .side-menu {
  display: none;
  } 
-    
+   .svgLogoIntro{  
+    width: 500px};
  .nav {
     display: flex;
     position: static;
