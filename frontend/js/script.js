@@ -51,11 +51,12 @@ gsap.set(".logo-text", {
 tl
 
 // "Web it!" erscheint
-.from(".webit", {
+.from(".webit",  {
   opacity: 0,
   y: 20,
   duration: 1
 })
+
 
 // "it!" verschwindet
 .to(".it", {
@@ -73,11 +74,13 @@ tl
 }, "-=0.3")
 
 // Logo erscheint
-.to(".svgLogoIntro", {
+.to(".svgLogoIntro ,.with", {
   opacity: 1,
   scale: 1,
   duration: 1
 }, "-=0.6")
+
+
 
 // Klammern rein
 .to(".brace-left", {
