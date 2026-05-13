@@ -139,6 +139,7 @@ font-family: "Montserrat",Sans-serif;
        align-items:center;
       grid-row: 2;
       gap: 0.5em;
+       text-align:center;
     }
 
     .hero h1{
