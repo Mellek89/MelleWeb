@@ -35,11 +35,35 @@ font-family: "Montserrat",Sans-serif;
       gap:28px;
       position:relative;
     }
-    .svgLogoIntro{
+.svgLogoIntro
+    {
+     
   width:300px;
   height:auto;
   display:block;
-  overflow:visible;
+  overflow:visible; 
+  opacity: 0;
+}
+.webit{
+    position: absolute;
+
+    left: 60px;
+    top: 95px;
+
+    width:300px;
+    z-index: 5;
+}
+
+.svgWeb{
+    width: 100%;
+    display:block;
+}
+
+.it{
+    position:absolute;
+    left: 170px;
+    top: 8px;
+    font-size: 60px;
 }
 
     .brace{
@@ -379,6 +403,22 @@ align-items: center;
  } 
    .svgLogoIntro{  
     width: 500px};
+.webit{
+    position: absolute;
+
+    left: 99px;
+    top: 157px;
+
+    width:500px;
+    z-index: 5;
+}
+
+    .it{
+    position:absolute;
+    left: 280px;
+    top: 50px;
+    font-size: 60px;
+}
  .nav {
     display: flex;
     position: static;
