@@ -11,7 +11,7 @@ document.querySelectorAll('.lang').forEach(el => {
     if (!file) file = "index.html";
 
     // 👉 Weiterleitung (einfach & robust)
-    window.location.href = `/frontend/${lang}/${file}`;
+    window.location.href = `/MelleWeb/frontend/${lang}/${file}`;
   });
 });
 const tl = gsap.timeline();
