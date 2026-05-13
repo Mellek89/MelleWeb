@@ -34,6 +34,7 @@ font-family: "Montserrat",Sans-serif;
       align-items:center;
       gap:28px;
       position:relative;
+   
     }
 .svgLogoIntro
     {
@@ -66,7 +67,7 @@ font-family: "Montserrat",Sans-serif;
 .with{
   opacity: 0;
    position: absolute;
-    left: 100px;   /* horizontal verschieben */
+    left: 110px;   /* horizontal verschieben */
     top: -50px;     /* vertikal verschieben */
 
     font-size: 38px;
@@ -415,7 +416,7 @@ align-items: center;
  } 
    .svgLogoIntro{  
     width: 500px}
-    
+
 .webit{
 position: absolute;
     left: 99px;
