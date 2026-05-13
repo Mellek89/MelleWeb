@@ -118,11 +118,11 @@ tl
 }, "-=0.5")
 
 // leichter cinematic zoom
-.to(".svgLogoIntro", {
+/*.to(".svgLogoIntro", {
   scale: 1.03,
   duration: 0.6,
   ease: "power2.out"
-})
+})*/
 
 .to(".svgLogoIntro", {
   scale: 1,
