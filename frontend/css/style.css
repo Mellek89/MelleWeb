@@ -142,7 +142,8 @@ font-family: "Montserrat",Sans-serif;
        text-align:center;
     }
 
-    .hero h1{
+    .hero h1,
+    h1{
       font-size:30px;
       font-weight:300;
       margin-bottom:20px;
@@ -215,11 +216,13 @@ padding: 0;
    font-weight: 400;
    text-transform: uppercase;
    letter-spacing: 9.4px;
+   text-align: center;
+   margin-bottom:2em;
 }
 
 .menuContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-inline: unset;
 }
  .side-menu {
@@ -373,7 +376,25 @@ padding: 0;
     z-index: 4;
 
 }
+.timeline{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1em;
+}
 
+/* Mobil */
+.timeline-item{
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+}
+.svgSAP{
+  width: 50px;
+}
 .mockups{
   display: flex;
   flex-direction: column;
@@ -483,10 +504,8 @@ position: absolute;
   padding-top: 3rem;  
   gap: 5rem !important;
 }
-.menuContainer{
-    gap: 0.5em;
-    margin-inline: auto;
-}
+
+
 
  .logo,
   .hamb,
@@ -494,6 +513,26 @@ position: absolute;
     order: 0; 
     margin-left: 0;
   }
+
+    .timeline-item{
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .year{
+        text-align: right;
+        font-weight: 500;
+        padding-top: .2rem;
+    }
+
+    .content{
+        display:flex;
+        flex-direction:column;
+        gap:.5rem;
+    }
+
 
     .mobile-only {
     display: none;

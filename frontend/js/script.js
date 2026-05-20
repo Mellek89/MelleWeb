@@ -11,10 +11,30 @@ document.querySelectorAll('.lang').forEach(el => {
     if (!file) file = "index.html";
 
     // 👉 Weiterleitung (einfach & robust)
-    window.location.href = `/MelleWeb/frontend/${lang}/${file}`;
+    //window.location.href = `/MelleWeb/frontend/${lang}/${file}`;
+    window.location.href = `/frontend/${lang}/${file}`;
   });
 });
+
+
+const introPlayed = sessionStorage.getItem("introPlayed");
+if (introPlayed) {
+  // Intro überspringen
+  gsap.set("#intro", {
+    display: "none"
+  });
+
+  gsap.set("#content", {
+    opacity: 1,
+    y: 0
+  });
+
+} else {
+  sessionStorage.setItem("introPlayed", "true");
 const tl = gsap.timeline();
+
+
+// Prüfen, ob Intro schon abgespielt wurde
 
 // Initial States
 gsap.set(".svgLogoIntro", {
@@ -160,3 +180,4 @@ tl
     ease: "power3.out"
   }
 );
+}
