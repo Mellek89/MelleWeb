@@ -132,37 +132,7 @@ font-family: "Montserrat",Sans-serif;
   transform:translateY(30px);
 }
 
-    .hero{
-       width:100%;
-      display: flex;
-      flex-direction: column;
-       align-items:center;
-      grid-row: 2;
-      gap: 0.5em;
-       text-align:center;
-    }
-
-    .hero h1,
-    h1{
-      font-size:30px;
-      font-weight:300;
-      margin-bottom:20px;
-      text-transform: uppercase;
-         text-align:center;
-    }
-
-    .hero .audience{
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      font-size:21px;
-      color:#666;
-    }
-    .hero .branding{
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size:11px;
-      color:#666;
-    }
+ 
 
 /* Container */
 .container {
@@ -190,7 +160,7 @@ font-family: "Montserrat",Sans-serif;
   display: grid;
   grid-template-columns: 1fr;   /* nur EINE Spalte auf Mobil */
   grid-template-rows: auto auto auto auto auto; 
-  gap: 5rem;
+  gap: 2rem;
   /*min-height: auto;*/
   min-height: 100dvh;
   align-content:start;
@@ -207,22 +177,59 @@ padding: 0;
   padding:0;
   box-sizing: border-box;
  /* font-family: 'Poppins', 'san-serifs'*/}
+   .hero{
+       width:100%;
+      display: flex;
+      flex-direction: column;
+       align-items:center;
+      grid-row: 2;
+      gap: 0.5em;
+       text-align:center;
+    }
 
+    .hero h1,
+    h1{
+      font-size: 1.5em;
+      font-weight:300;
+      margin-bottom:20px;
+      margin-top: 20px;
+      text-transform: uppercase;
+         text-align:center;
+         letter-spacing: 9.4px;
+    }
+
+    .hero .audience{
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size:21px;
+      color:#666;
+    }
+    .hero .branding{
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size:11px;
+      color:#666;
+    }
 
  h2{
    /*color:  #cbcaca;*/
-    color: #2A2A2A;
+    color: #666;
    font-size: 30px;
    font-weight: 400;
    text-transform: uppercase;
    letter-spacing: 9.4px;
    text-align: center;
-   margin-bottom:2em;
+
+}
+h3{
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  color: #4A6FA5;
 }
 
 .menuContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-inline: unset;
 }
  .side-menu {
@@ -376,6 +383,7 @@ padding: 0;
     z-index: 4;
 
 }
+
 .timeline{
     width: 100%;
     max-width: 900px;
@@ -391,6 +399,12 @@ padding: 0;
     display:flex;
     flex-direction:column;
     gap:.5rem;
+}
+
+.content p,
+.content small,
+.timeline-item .year{
+  color: #666;
 }
 .svgSAP{
   width: 50px;
@@ -449,12 +463,12 @@ text-decoration:none;
     margin: 0 auto;
   }
 
-  .header {
-  display: grid;
-  text-align: left;
-  padding: 15px 25px 15px 25px;
 
-  }
+
+  .menuContainer{
+    gap: 0.5em;
+    margin-inline: auto;
+}
 
    .hamb, .side-menu {
  display: none;
@@ -487,7 +501,7 @@ position: absolute;
     position: static;
     height: auto;
     background: transparent;
-    flex-direction: row;
+  
     justify-content: flex-end;
     align-items: center;
     transform: none;
