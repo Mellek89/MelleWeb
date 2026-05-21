@@ -436,6 +436,7 @@ h3{
   flex-direction: column;
   gap: 1em;
    align-items: center;
+   padding: 0.5em;
 }
 .mockups img{
 width: 300px;
