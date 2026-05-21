@@ -406,24 +406,30 @@ h3{
    
 }
 
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.content p,
+.content small{
+  font-size: 0.7em;
 
-.content p{
-  font-size: 0.9em;
 }
 
 .content p,
 .content small,
 .timeline-item .year{
   color: #666;
+
 }
 
 .sapContainer{
   display: flex;
-  gap:0.5em;
+  gap:0.1em;
 
 }
 .svgSAP{
-  width: 50px;
+  width: 2em;
 }
 .mockups{
   display: flex;
