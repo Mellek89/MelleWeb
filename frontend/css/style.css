@@ -448,14 +448,14 @@ text-decoration:none;
 }
 .mockups .subline{
   text-transform: uppercase;
-  letter-spacing: 9.4px;
+  letter-spacing: 0.6em;
   text-align: center;
 
 }
 .mockups .industry{
   font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 9.4px;
+  letter-spacing: 0.5em;
    text-align: center;
 }
 .mockups .description{
