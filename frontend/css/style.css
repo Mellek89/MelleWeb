@@ -222,8 +222,7 @@ padding: 0;
 
 }
 h3{
-  text-transform: uppercase;
-  letter-spacing: 2.4px;
+
   color: #4A6FA5;
   font-size: 0.9em;
 }
@@ -400,8 +399,10 @@ h3{
 .timeline-item{
     display:flex;
     flex-direction:column;
+     align-items:center;
     gap:.5rem;
     width:min(100%,700px);
+     border:1px solid red;
    
 }
 
@@ -409,6 +410,7 @@ h3{
 .content p{
   font-size: 0.9em;
 }
+
 .content p,
 .content small,
 .timeline-item .year{
