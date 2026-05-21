@@ -214,7 +214,7 @@ padding: 0;
  h2{
    /*color:  #cbcaca;*/
     color: #666;
-   font-size: 30px;
+   font-size: 1em;
    font-weight: 400;
    text-transform: uppercase;
    letter-spacing: 9.4px;
@@ -225,6 +225,7 @@ h3{
   text-transform: uppercase;
   letter-spacing: 2.4px;
   color: #4A6FA5;
+  font-size: 0.9em;
 }
 
 .menuContainer{
@@ -392,6 +393,7 @@ h3{
     flex-direction: column;
     gap: 2rem;
     padding: 1em;
+
 }
 
 /* Mobil */
@@ -399,12 +401,24 @@ h3{
     display:flex;
     flex-direction:column;
     gap:.5rem;
+    width:min(100%,700px);
+   
 }
 
+
+.content p{
+  font-size: 0.9em;
+}
 .content p,
 .content small,
 .timeline-item .year{
   color: #666;
+}
+
+.sapContainer{
+  display: flex;
+  gap:0.5em;
+
 }
 .svgSAP{
   width: 50px;
@@ -532,7 +546,8 @@ position: absolute;
         display: grid;
         grid-template-columns: 130px 1fr;
         gap: 2rem;
-        align-items: start;
+        
+
     }
 
     .year{
