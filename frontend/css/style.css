@@ -185,6 +185,7 @@ padding: 0;
       grid-row: 2;
       gap: 0.5em;
        text-align:center;
+       padding: 0.5em;
     }
 
     .hero h1,
@@ -195,20 +196,22 @@ padding: 0;
       margin-top: 20px;
       text-transform: uppercase;
          text-align:center;
-         letter-spacing: 9.4px;
+         letter-spacing: 5px;
+           line-height: 1.8; 
     }
 
     .hero .audience{
       text-transform: uppercase;
-      letter-spacing: 4px;
-      font-size:21px;
+      letter-spacing: 2px;
+      font-size:0.9em;
       color:#666;
+       line-height: 1.8; 
     }
     .hero .branding{
       text-transform: uppercase;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       font-size:11px;
-      color:#666;
+      color: #4A6FA5;
     }
 
  h2{
@@ -457,11 +460,13 @@ text-decoration:none;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-   text-align: center;
+  text-align: center;
+  color: #666;
 }
 .mockups .description{
    font-size: 12px;  
     text-align: center;
+    color: #4A6FA5;
 }
 .mockups .inProcess{
   font-size: 12px;  
@@ -551,9 +556,21 @@ position: absolute;
     margin-left: 0;
   }
 
-      .hero h1,
+    .hero h1,
     h1{
       font-size: 1.5em;
+    }
+     .hero .audience{
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size:1.3em;
+  
+    }
+    .hero .branding{
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size:11px;
+      color:#666;
     }
 
     .timeline-item{
