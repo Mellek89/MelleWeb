@@ -233,7 +233,7 @@ padding: 0;
    text-transform: uppercase;
    letter-spacing: 1em;
    text-align: center;
-   line-height: 0.5em;
+   line-height: 1.5em;
 
 }
 h3{
@@ -425,9 +425,10 @@ h3{
   display: flex;
   flex-direction: column;
 }
-.content p,
-.content small{
+.content p
+{
   font-size: 0.7em;
+  line-height: 1.5em;
 
 }
 
@@ -443,6 +444,7 @@ h3{
   gap:0.1em;
 
 }
+
 .svgSAP{
   width: 2em;
 }
