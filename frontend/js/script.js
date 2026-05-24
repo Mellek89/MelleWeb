@@ -10,7 +10,8 @@ document.querySelectorAll('.lang').forEach(el => {
     let file = window.location.pathname.split("/").pop();
     if (!file) file = "index.html";
 
-    // 👉 Weiterleitung (einfach & robust)
+    
+    console.log("language");
     window.location.href = `/MelleWeb/frontend/${lang}/${file}`;
   // window.location.href = `/frontend/${lang}/${file}`;
   });
