@@ -3,7 +3,19 @@
   font-style: normal;
   font-weight: 300; /* Light = 300 */
   font-display: swap; /* sorgt dafür, dass Text sofort sichtbar ist */
-  src: url('./Outfit/static/Outfit-Light.woff') format('woff');
+  src: url('../fonts/Outfit/static/Outfit-Light.woff') format('woff');
+}
+@font-face {
+  font-family: "JetBrainsMono";
+ src: url("../fonts/Bebas_Neue_Jet/JetBrains_Mono/static/JetBrainsMono-Bold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.null-code {
+  font-family: "JetBrainsMono", monospace;
+  font-size: 1.3em;
+  font-weight: 500
 }
 html, body {
   overflow: auto;
@@ -193,7 +205,7 @@ padding: 0;
     }
     .hero h1,
     h1{
-      font-size: 1.0em;
+      font-size: 1.2em;
       font-weight:300;
       
       margin-top: 20px;
@@ -231,7 +243,7 @@ padding: 0;
    font-size: 1em;
    font-weight: 400;
    text-transform: uppercase;
-   letter-spacing: 0.5em;
+   letter-spacing: 0.2em;
    text-align: center;
    line-height: 1.5em;
 
@@ -442,8 +454,8 @@ h3{
 .sapContainer{
   display: flex;
   gap:0.1em;
-
 }
+
 
 .svgSAP{
   width: 2em;
