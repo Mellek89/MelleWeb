@@ -14,8 +14,9 @@
 
 .null-code {
   font-family: "JetBrainsMono", monospace;
-  font-size: 1.3em;
-  font-weight: 500
+  font-size: 1.1em;
+
+  color:#5c84d6
 }
 html, body {
   overflow: auto;
