@@ -388,10 +388,6 @@ h3{
   transition: opacity 0.2s ease;
 }
 
-.lang:hover {
-  opacity: 1;
-}
-
 .lang.active {
   opacity: 1;
   font-weight: bold;
@@ -497,11 +493,70 @@ text-decoration:none;
   font-size: 12px;  
   color: rgba(255, 0, 0, 0.716);
 }
-.contact-section{
+
+.proposalAndContactSections{
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+
+
+.service-intro{
+    max-width:700px;
+    margin:20px auto 50px;
+    line-height:1.6;
+}
+
+.service-cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.service-card{
+    width:300px;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+
+.service-card .icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.service-card h3{
+    margin-bottom:15px;
+}
+
+.service-card p{
+    line-height:1.6;
+}
+
+
+.serviceHeader,
+.contactHeader{
+display: flex;
+flex-direction: column;
+gap: 2em;
+}
+.contact-section,
+.proposal-section{
+  display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
     text-align:center;
     padding:80px 20px;
     max-width:1000px;
+    background-color: #F5F5F5;
     margin:auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    gap: 1em;
 }
 
 .contact-section h1{
@@ -520,6 +575,7 @@ text-decoration:none;
     margin-left:auto;
     margin-right:auto;
 }
+
 
 .cta-button{
     display:inline-block;
