@@ -524,7 +524,8 @@ text-decoration:none;
 }
 
 
-.service-card .icon{
+.service-card .icon,
+.service-card .svg{
     font-size:40px;
     margin-bottom:15px;
 }
