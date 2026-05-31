@@ -405,7 +405,12 @@ h3{
     z-index: 4;
 
 }
-
+.sectionIndex{
+  grid-row:2;
+}
+.IndexWithDogs{
+  width: 300px;
+}
 .timeline{
     
     max-width: 900px;
