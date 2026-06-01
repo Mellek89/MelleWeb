@@ -192,7 +192,7 @@ padding: 0;
        width:100%;
       display: flex;
       flex-direction: column;
-       align-items:center;
+      align-items:center;
       grid-row: 1; 
       gap: 1.5em;
        text-align:center;
@@ -416,10 +416,11 @@ h3{
 .sectionIndex{
   grid-row:2;
     max-width: 1200px;
+    padding: 1em;
 }
 .IndexWithDogs,
 .handsOnEyes{
-    max-width: 400px;
+  max-width: 400px;
   height: auto;
 }
 .timeline{
