@@ -408,7 +408,8 @@ h3{
 .sectionIndex{
   grid-row:2;
 }
-.IndexWithDogs{
+.IndexWithDogs,
+.handsOnEyes{
   width: 300px;
 }
 .timeline{
