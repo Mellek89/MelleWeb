@@ -1,3 +1,4 @@
+
 document.querySelectorAll('.lang').forEach(el => {
   el.addEventListener('click', () => {
     const lang = el.dataset.lang;
@@ -12,8 +13,8 @@ document.querySelectorAll('.lang').forEach(el => {
 
     
     console.log("language");
-    window.location.href = `/MelleWeb/frontend/${lang}/${file}`;
-  //window.location.href = `/frontend/${lang}/${file}`;
+    //window.location.href = `/MelleWeb/frontend/${lang}/${file}`;
+  window.location.href = `/frontend/${lang}/${file}`;
   });
 });
 
