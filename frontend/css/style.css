@@ -574,14 +574,28 @@ gap: 2em;
     background: url("../../Images/contactMe.jpg") center/cover no-repeat;
      margin: 0 auto; 
 }
+.contact-whatsapp,
+.contact-email {
+    display: flex;
+    align-items: center; /* vertikal zentrieren */
+    gap: 4px; /* Abstand zwischen Icon und Text */
+}
 
+.contact{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+height: 200px;
+
+}
 
 
 .contact-text {
     position: relative;
     z-index: 3;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
+     
 }
 
 .contact-text p {
@@ -589,20 +603,19 @@ gap: 2em;
     font-size: clamp(1.0rem, 4vw, 1rem);
     line-height: 1.5;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-top:4rem;
 }
 .contact-section,
 .proposal-section{
     padding:50px 20px;
     gap: 1em;
 }
-.contact-whatsapp h3{
-color: #128C7E;
+
+.contactMe{
+  margin-bottom: 2rem;
 }
-.contact-email h3{
-  color:#0078D4;
-  display: flex;
-  flex-direction: row;
-}
+
+
 .svgEmail,
 .svgWhatsapp{
   width:24px;
@@ -660,14 +673,14 @@ color: #128C7E;
 
 .contact-options{
     display:flex;
-    gap:30px;
+    gap:0.8em;
     justify-content:center;
     flex-wrap:wrap;
+    margin-bottom: 3rem;
 }
 .contact-options a{
    text-decoration:none;
-    font-weight:bold;
-    color: #4A6FA5;
+  color: #E6F0FF;
 }
 
 .card h3{
@@ -794,7 +807,7 @@ position: absolute;
  .proposalAndContactSections{
   display:flex;
    flex-direction: row;
-  width: 100%;
+  width: 75%;
    height: auto;
    gap: 18rem;
    justify-content: center;
@@ -805,7 +818,14 @@ position: absolute;
   max-width: 600px;
 }
 
-
+.contact-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  max-height: 500px;
+  padding: 50px 20px;
+}
 .contact-section img {
    
     border-radius: 50%;
@@ -816,24 +836,17 @@ position: absolute;
   width: min(600px, 100%);
   height: auto;
 }
-
-.contact-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 500px;
-  max-height: 500px;
-  padding: 50px 20px;
-}
 .contact{
   display: flex;
   flex-direction: column;
-  gap: 2em;
-
-
+ 
+}
+.contact-text{
+  margin-top: 5rem;
 }
 
 .contact-options{
   z-index: 5;
 }
+
 }
