@@ -1,4 +1,15 @@
 
+document.addEventListener('DOMContentLoaded', () => {
+    const parts = window.location.pathname.split('/');
+    const currentLang = parts[2]; // de, en, fr
+
+    document.querySelectorAll('.lang').forEach(el => {
+        el.classList.toggle(
+            'active',
+            el.dataset.lang === currentLang
+        );
+    });
+});
 document.querySelectorAll('.lang').forEach(el => {
   el.addEventListener('click', () => {
     const lang = el.dataset.lang;
@@ -12,9 +23,9 @@ document.querySelectorAll('.lang').forEach(el => {
     if (!file) file = "index.html";
 
     
-    console.log("language");
-    //window.location.href = `/MelleWeb/frontend/${lang}/${file}`;
-  window.location.href = `/frontend/${lang}/${file}`;
+    console.log("lang");
+    window.location.href = `/MelleWeb/frontend/${lang}/${file}`;
+  //window.location.href = `/frontend/${lang}/${file}`;
   });
 });
 
