@@ -626,12 +626,14 @@ height: 200px;
     margin-top:40px;
 }
 
-.service-item{
+.service-item,
+.skill-item{
     padding:18px 0;
     border-bottom:1px solid rgba(0,0,0,0.08);
 }
 
-.service-item:last-child{
+.service-item:last-child,
+.skill-item:last-child{
     border-bottom:none;
 }
 
@@ -645,6 +647,26 @@ height: 200px;
     line-height:1.5;
     font-size:14.5px;
     color:#333;
+}
+.service-item svg,
+.skill-item svg{
+  width: 60px;
+  height: 60px;
+}
+.skill-item{
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+.codingItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+.codingItem span{
+  font-size:  12px;
 }
 
 .contact-section h1{
