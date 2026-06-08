@@ -202,7 +202,7 @@ padding: 0;
    letter-spacing: 0.2em;
    text-align: center;
    line-height: 1.5em;
-
+ padding: 1.0em;
 }
 h3{
   color: #4A6FA5;
@@ -631,6 +631,7 @@ height: 200px;
 .skill-item{
     padding:18px 0;
     border-bottom:1px solid rgba(0,0,0,0.08);
+    flex-wrap: wrap;
 }
 
 .service-item:last-child,
