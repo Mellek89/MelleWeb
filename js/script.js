@@ -25,7 +25,7 @@ document.querySelectorAll('.lang').forEach(el => {
 
     
     console.log("lang");
-    window.location.href = `/MelleWeb/${lang}/${file}`;
+    window.location.href = `/MelleWeb/${lang}/${file}`; 
   //window.location.href = `/${lang}/${file}`;
   });
 });
