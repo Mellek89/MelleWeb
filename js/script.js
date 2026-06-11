@@ -1,4 +1,4 @@
-const BASE_PATH = '/frontend';
+
 //const BASE_PATH = '';
 document.addEventListener('DOMContentLoaded', () => {
     const parts = window.location.pathname.split('/');
@@ -25,8 +25,8 @@ document.querySelectorAll('.lang').forEach(el => {
 
     
     console.log("lang");
-    //window.location.href = `/MelleWeb/frontend/${lang}/${file}`;
-  window.location.href = `${BASE_PATH}/${lang}/${file}`;
+    window.location.href = `/MelleWeb/${lang}/${file}`;
+  //window.location.href = `/${lang}/${file}`;
   });
 });
 
