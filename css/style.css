@@ -892,4 +892,14 @@ position: absolute;
   z-index: 5;
 }
 
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5em;
+}
+.footer a{
+  text-decoration: none;
+  color: #333;
+}
 }
