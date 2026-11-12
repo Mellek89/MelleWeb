@@ -717,8 +717,15 @@ height: 200px;
 
 
 .footer{
+    display: flex;
+  flex-direction: row;
    background-color: #F5F5F5;
    text-align: center;
+   justify-content: center;
+}
+.footer a{
+text-decoration: none;
+  color: #333;
 }
 /*private Policy*/
 
@@ -741,6 +748,59 @@ height: 200px;
 .sectionPrivatePolicy p{
   margin-left: 3em;
 }
+
+
+/* Ab 900 px: Kreis für die Kontaktsektion */
+@media (min-width: 900px) {
+
+  .proposalAndContactSections {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: auto;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proposal-section {
+    max-width: 600px;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    max-height: 500px;
+    padding: 50px 20px;
+  }
+
+  .contact-section img {
+    border-radius: 50%;
+    padding: 1rem;
+  }
+
+  .contactMe {
+    width: min(600px, 100%);
+    height: auto;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-text {
+    margin-top: 2rem;
+  }
+
+  .contact-options {
+    z-index: 5;
+  }
+}
+
+
 @media (min-width: 1024px) {
   .container {
    
@@ -852,7 +912,7 @@ position: absolute;
    flex-direction: row;
   width: 75%;
    height: auto;
-   gap: 18rem;
+   gap: 1rem;
    justify-content: center;
    align-items: center;
 
@@ -868,13 +928,10 @@ position: absolute;
   max-width: 500px;
   max-height: 500px;
   padding: 50px 20px;
-}
-.contact-section img {
-   
-    border-radius: 50%;
-    padding: 1.0rem;
+  
 
 }
+
 .contactMe {
   width: min(600px, 100%);
   height: auto;
@@ -882,10 +939,10 @@ position: absolute;
 .contact{
   display: flex;
   flex-direction: column;
- 
+
 }
 .contact-text{
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .contact-options{
