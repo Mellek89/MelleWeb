@@ -447,6 +447,7 @@ h3{
     flex-direction:column;
     gap:.5rem;
     width:min(100%,700px);
+    
 }
 .content{
   display: flex;
@@ -506,10 +507,14 @@ h3{
 width: 300px;
 align-items: center;
 }
+.mockups svg{
+  width: 400px;
+}
 
 .mockups a{
-text-decoration:none;
+text-decoration:underline;
   color:inherit;
+    text-underline-offset: 5px;
 }
 .mockups .subline{
   text-transform: uppercase;
